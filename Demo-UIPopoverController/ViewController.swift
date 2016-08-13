@@ -31,6 +31,8 @@ class ViewController: UIViewController {
         controllerPopver.backgroundColor = UIColor.greenColor()
         return controllerPopver
     }()
+//    lazy var 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }

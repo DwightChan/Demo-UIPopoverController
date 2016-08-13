@@ -11,6 +11,9 @@
 		83E4DA3A1D5F465E00E42295 /* CDH_iOS8ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E4DA391D5F465E00E42295 /* CDH_iOS8ViewController.swift */; };
 		83E4DA3C1D5F4A8900E42295 /* CDH_OneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E4DA3B1D5F4A8900E42295 /* CDH_OneViewController.swift */; };
 		83E4DA3E1D5F4B1400E42295 /* CDH_TwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E4DA3D1D5F4B1400E42295 /* CDH_TwoViewController.swift */; };
+		83E4DA411D5F522C00E42295 /* CDH_PickColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E4DA3F1D5F522C00E42295 /* CDH_PickColorViewController.swift */; };
+		83E4DA421D5F522C00E42295 /* CDH_PickColorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83E4DA401D5F522C00E42295 /* CDH_PickColorViewController.xib */; };
+		83E4DA481D5F560C00E42295 /* UIImage+GetColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 83E4DA471D5F560C00E42295 /* UIImage+GetColor.m */; };
 		83F2F48B1D5F391A007C0E6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F2F48A1D5F391A007C0E6F /* AppDelegate.swift */; };
 		83F2F48D1D5F391A007C0E6F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F2F48C1D5F391A007C0E6F /* ViewController.swift */; };
 		83F2F4901D5F391A007C0E6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83F2F48E1D5F391A007C0E6F /* Main.storyboard */; };
@@ -23,6 +26,10 @@
 		83E4DA391D5F465E00E42295 /* CDH_iOS8ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDH_iOS8ViewController.swift; sourceTree = "<group>"; };
 		83E4DA3B1D5F4A8900E42295 /* CDH_OneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDH_OneViewController.swift; sourceTree = "<group>"; };
 		83E4DA3D1D5F4B1400E42295 /* CDH_TwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDH_TwoViewController.swift; sourceTree = "<group>"; };
+		83E4DA3F1D5F522C00E42295 /* CDH_PickColorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDH_PickColorViewController.swift; sourceTree = "<group>"; };
+		83E4DA401D5F522C00E42295 /* CDH_PickColorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CDH_PickColorViewController.xib; sourceTree = "<group>"; };
+		83E4DA461D5F560C00E42295 /* UIImage+GetColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GetColor.h"; sourceTree = "<group>"; };
+		83E4DA471D5F560C00E42295 /* UIImage+GetColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GetColor.m"; sourceTree = "<group>"; };
 		83F2F4871D5F391A007C0E6F /* Demo-UIPopoverController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Demo-UIPopoverController.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83F2F48A1D5F391A007C0E6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83F2F48C1D5F391A007C0E6F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +104,8 @@
 			isa = PBXGroup;
 			children = (
 				83F2F49F1D5F3A27007C0E6F /* Category */,
+				83E4DA3F1D5F522C00E42295 /* CDH_PickColorViewController.swift */,
+				83E4DA401D5F522C00E42295 /* CDH_PickColorViewController.xib */,
 			);
 			name = "PickColor(选择颜色)";
 			path = PickColor;
@@ -105,6 +114,8 @@
 		83F2F49F1D5F3A27007C0E6F /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				83E4DA461D5F560C00E42295 /* UIImage+GetColor.h */,
+				83E4DA471D5F560C00E42295 /* UIImage+GetColor.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -190,6 +201,7 @@
 				83F2F4951D5F391A007C0E6F /* LaunchScreen.storyboard in Resources */,
 				83F2F4921D5F391A007C0E6F /* Assets.xcassets in Resources */,
 				83F2F4901D5F391A007C0E6F /* Main.storyboard in Resources */,
+				83E4DA421D5F522C00E42295 /* CDH_PickColorViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,11 +212,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83E4DA481D5F560C00E42295 /* UIImage+GetColor.m in Sources */,
 				83F2F48D1D5F391A007C0E6F /* ViewController.swift in Sources */,
 				83E4DA3C1D5F4A8900E42295 /* CDH_OneViewController.swift in Sources */,
 				83E4DA381D5F40BE00E42295 /* CDH_MenuViewController.swift in Sources */,
 				83E4DA3E1D5F4B1400E42295 /* CDH_TwoViewController.swift in Sources */,
 				83F2F48B1D5F391A007C0E6F /* AppDelegate.swift in Sources */,
+				83E4DA411D5F522C00E42295 /* CDH_PickColorViewController.swift in Sources */,
 				83E4DA3A1D5F465E00E42295 /* CDH_iOS8ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -320,11 +334,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Demo-UIPopoverController/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chendehao.Demo-UIPopoverController";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -332,6 +348,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Demo-UIPopoverController/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
