@@ -31,7 +31,20 @@ class ViewController: UIViewController {
         controllerPopver.backgroundColor = UIColor.greenColor()
         return controllerPopver
     }()
-//    lazy var 
+    lazy var colorPopover : UIPopoverController = {
+        // 1.创建一个内容控制器
+        let colorVC = CDH_PickColorViewController()
+        // 2.设置 popoverController, 必须指定内容控制器否者会奔溃
+        let colorPopver = UIPopoverController(contentViewController: colorVC)
+        // 3.封装 block, 用于改变控制的背景颜色
+        // 注意: 循环引用
+        colorVC.colorBlock = { [weak self](color : UIColor) -> () in
+            self!.view.backgroundColor = color
+            // 修原色之后dismiss 掉 modal 出来的控制器
+            colorPopver.dismissPopoverAnimated(true)
+        }
+        return colorPopver
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -70,6 +83,7 @@ extension ViewController {
     }
     /// 选择颜色点击
     @IBAction func pickColor(sender: UIButton) {
+        colorPopover.presentPopoverFromRect(sender.bounds, inView: sender, permittedArrowDirections: .Any, animated: true)
     }
     /// ios8 点击
     @IBAction func iOS8Click(sender: UIButton) {

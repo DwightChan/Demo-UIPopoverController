@@ -30,6 +30,7 @@
 		83E4DA401D5F522C00E42295 /* CDH_PickColorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CDH_PickColorViewController.xib; sourceTree = "<group>"; };
 		83E4DA461D5F560C00E42295 /* UIImage+GetColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GetColor.h"; sourceTree = "<group>"; };
 		83E4DA471D5F560C00E42295 /* UIImage+GetColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GetColor.m"; sourceTree = "<group>"; };
+		83E4DA491D5F570800E42295 /* Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Bridge.h; path = "Demo-UIPopoverController/Bridge.h"; sourceTree = SOURCE_ROOT; };
 		83F2F4871D5F391A007C0E6F /* Demo-UIPopoverController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Demo-UIPopoverController.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83F2F48A1D5F391A007C0E6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83F2F48C1D5F391A007C0E6F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +73,7 @@
 				83F2F49C1D5F3A27007C0E6F /* Classes */,
 				83F2F48A1D5F391A007C0E6F /* AppDelegate.swift */,
 				83F2F48C1D5F391A007C0E6F /* ViewController.swift */,
+				83E4DA491D5F570800E42295 /* Bridge.h */,
 				83F2F48E1D5F391A007C0E6F /* Main.storyboard */,
 				83F2F4911D5F391A007C0E6F /* Assets.xcassets */,
 				83F2F4931D5F391A007C0E6F /* LaunchScreen.storyboard */,
@@ -340,6 +342,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chendehao.Demo-UIPopoverController";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Demo-UIPopoverController/Bridge.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -354,6 +357,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chendehao.Demo-UIPopoverController";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Demo-UIPopoverController/Bridge.h";
 			};
 			name = Release;
 		};
