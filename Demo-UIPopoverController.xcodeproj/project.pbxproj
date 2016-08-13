@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		83E4DA381D5F40BE00E42295 /* CDH_MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E4DA371D5F40BE00E42295 /* CDH_MenuViewController.swift */; };
+		83E4DA3A1D5F465E00E42295 /* CDH_iOS8ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E4DA391D5F465E00E42295 /* CDH_iOS8ViewController.swift */; };
 		83F2F48B1D5F391A007C0E6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F2F48A1D5F391A007C0E6F /* AppDelegate.swift */; };
 		83F2F48D1D5F391A007C0E6F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F2F48C1D5F391A007C0E6F /* ViewController.swift */; };
 		83F2F4901D5F391A007C0E6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83F2F48E1D5F391A007C0E6F /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		83E4DA371D5F40BE00E42295 /* CDH_MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDH_MenuViewController.swift; sourceTree = "<group>"; };
+		83E4DA391D5F465E00E42295 /* CDH_iOS8ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDH_iOS8ViewController.swift; sourceTree = "<group>"; };
 		83F2F4871D5F391A007C0E6F /* Demo-UIPopoverController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Demo-UIPopoverController.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83F2F48A1D5F391A007C0E6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83F2F48C1D5F391A007C0E6F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 		83F2F4A01D5F3DF5007C0E6F /* After_iOS8(iOS8之后) */ = {
 			isa = PBXGroup;
 			children = (
+				83E4DA391D5F465E00E42295 /* CDH_iOS8ViewController.swift */,
 			);
 			name = "After_iOS8(iOS8之后)";
 			path = After_iOS8;
@@ -194,6 +197,7 @@
 				83F2F48D1D5F391A007C0E6F /* ViewController.swift in Sources */,
 				83E4DA381D5F40BE00E42295 /* CDH_MenuViewController.swift in Sources */,
 				83F2F48B1D5F391A007C0E6F /* AppDelegate.swift in Sources */,
+				83E4DA3A1D5F465E00E42295 /* CDH_iOS8ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +313,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Demo-UIPopoverController/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chendehao.Demo-UIPopoverController";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -320,6 +325,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Demo-UIPopoverController/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chendehao.Demo-UIPopoverController";
 				PRODUCT_NAME = "$(TARGET_NAME)";
