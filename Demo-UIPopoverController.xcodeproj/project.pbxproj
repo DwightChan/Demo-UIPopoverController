@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		83E4DA381D5F40BE00E42295 /* CDH_MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E4DA371D5F40BE00E42295 /* CDH_MenuViewController.swift */; };
 		83F2F48B1D5F391A007C0E6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F2F48A1D5F391A007C0E6F /* AppDelegate.swift */; };
 		83F2F48D1D5F391A007C0E6F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F2F48C1D5F391A007C0E6F /* ViewController.swift */; };
 		83F2F4901D5F391A007C0E6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83F2F48E1D5F391A007C0E6F /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		83E4DA371D5F40BE00E42295 /* CDH_MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDH_MenuViewController.swift; sourceTree = "<group>"; };
 		83F2F4871D5F391A007C0E6F /* Demo-UIPopoverController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Demo-UIPopoverController.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83F2F48A1D5F391A007C0E6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83F2F48C1D5F391A007C0E6F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -68,6 +70,8 @@
 		83F2F49C1D5F3A27007C0E6F /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				83F2F4A01D5F3DF5007C0E6F /* After_iOS8(iOS8之后) */,
+				83F2F4A11D5F3DF5007C0E6F /* Controllers(控制器) */,
 				83F2F49D1D5F3A27007C0E6F /* Menu(菜单) */,
 				83F2F49E1D5F3A27007C0E6F /* PickColor(选择颜色) */,
 			);
@@ -77,6 +81,7 @@
 		83F2F49D1D5F3A27007C0E6F /* Menu(菜单) */ = {
 			isa = PBXGroup;
 			children = (
+				83E4DA371D5F40BE00E42295 /* CDH_MenuViewController.swift */,
 			);
 			name = "Menu(菜单)";
 			path = Menu;
@@ -96,6 +101,22 @@
 			children = (
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		83F2F4A01D5F3DF5007C0E6F /* After_iOS8(iOS8之后) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "After_iOS8(iOS8之后)";
+			path = After_iOS8;
+			sourceTree = "<group>";
+		};
+		83F2F4A11D5F3DF5007C0E6F /* Controllers(控制器) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Controllers(控制器)";
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +145,7 @@
 		83F2F47F1D5F391A007C0E6F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = CDH_;
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = CDHao;
@@ -170,6 +192,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				83F2F48D1D5F391A007C0E6F /* ViewController.swift in Sources */,
+				83E4DA381D5F40BE00E42295 /* CDH_MenuViewController.swift in Sources */,
 				83F2F48B1D5F391A007C0E6F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
