@@ -46,6 +46,22 @@ class ViewController: UIViewController {
         return colorPopver
     }()
     
+    // 在 ios8/9 之后的是使用都是都下面这个方法
+    lazy var iOS8VC : CDH_iOS8ViewController = {
+        // 1.创建内容控制器
+        let iOS8VC = CDH_iOS8ViewController()
+        
+        // 2.设置弹出样式为Popover(一旦设置弹出样式为popover,那么popoverPresentationController属性就有值了)
+        iOS8VC.modalPresentationStyle = .Popover
+        
+        // 3.设置弹出位置
+        // 注意: 弹出控制的两个属性 sourceView 和 sourceRect 每一次弹出的时候都要设置一次,
+        // 所以就不能再懒加载中设置, 而是设置在每次弹出的时候设置
+        // testVC.popoverPresentationController?.sourceView = self.view
+        // testVC.popoverPresentationController?.sourceRect = self.ios8Btn.frame
+        return iOS8VC
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -87,5 +103,19 @@ extension ViewController {
     }
     /// ios8 点击
     @IBAction func iOS8Click(sender: UIButton) {
+        // 当 popover消失的时候, 会将内容控制器的 popoverPresentationController属性中的所有属性都清空
+        print(iOS8VC.popoverPresentationController?.sourceView)
+        
+        // 1.设置 popover 的背景颜色
+        iOS8VC.popoverPresentationController?.backgroundColor = UIColor.redColor()
+        
+        // 2.设置弹出的位置
+        // 注意: 弹出控制器的两个属性 sourceView 和 sourceRect 每次弹出的时候都要设置
+        iOS8VC.popoverPresentationController?.sourceView = self.view
+        iOS8VC.popoverPresentationController?.sourceRect = sender.frame
+        
+        // 3.弹出 popover控制器
+        presentViewController(iOS8VC, animated: true, completion: nil)
+        
     }
 }

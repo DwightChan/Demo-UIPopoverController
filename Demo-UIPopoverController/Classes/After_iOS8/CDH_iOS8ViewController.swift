@@ -12,6 +12,6 @@ class CDH_iOS8ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor.redColor()
+        view.backgroundColor = UIColor.blueColor()
     }
 }
